@@ -41,8 +41,10 @@ public class Main {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String connectionUrl = "jdbc:sqlserver://" + Configuration.getDatabaseServer() + ";" +
                     "database=" + Configuration.getDatabaseName() + ";" +
+                    "instance=" + Configuration.getDatabaseInstance() + ";" +
                     "user=" + Configuration.getDatabaseUser() + ";" +
                     "password=" + Configuration.getDatabasePassword() + "";
+
             Connection con = DriverManager.getConnection(connectionUrl);
             log.info("Connected.");
 

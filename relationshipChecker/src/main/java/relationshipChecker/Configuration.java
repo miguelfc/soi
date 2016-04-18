@@ -14,6 +14,7 @@ public class Configuration {
     private static String databasePassword;
     private static String databaseServer;
     private static String databaseName;
+    private static String databaseInstance;
 
     public static String getConfigPath() {
         return configPath;
@@ -55,6 +56,14 @@ public class Configuration {
         Configuration.databaseName = databaseName;
     }
 
+    public static String getDatabaseInstance() {
+        return databaseInstance;
+    }
+
+    public static void setDatabaseInstance(String databaseInstance) {
+        Configuration.databaseInstance = databaseInstance;
+    }
+
     public static void loadConfiguration(Logger log) throws Exception {
         Properties prop = new Properties();
         InputStream input = null;
@@ -68,6 +77,7 @@ public class Configuration {
             Configuration.setDatabasePassword(prop.getProperty("database.password"));
             Configuration.setDatabaseServer(prop.getProperty("database.server"));
             Configuration.setDatabaseName(prop.getProperty("database.name"));
+            Configuration.setDatabaseInstance(prop.getProperty("database.instance"));
             
         } catch (IOException ex) {
             log.error("An error occurred while loading the config.properties file. This execution will be aborted.", ex);
