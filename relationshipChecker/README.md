@@ -40,6 +40,7 @@ application directory), as well as the username and log file destination.
 
 To execute it, run the script `bin/run.bat` from the command line.
 
+```
 $ run.bat
 2016-04-18 15:12:50 INFO  Main:main: - Executing relationship checker...
 2016-04-18 15:12:52 INFO  Main:main: - Connected.
@@ -77,6 +78,7 @@ $ run.bat
 2016-04-18 15:12:55 INFO  Main:main: -  32321   3865
 2016-04-18 15:12:55 INFO  Main:main: - You can find the full report in the log directory, in the report.csv file.
 2016-04-18 15:12:55 INFO  Main:main: - Finished
+```
 
 ## Uninstallation 
 
