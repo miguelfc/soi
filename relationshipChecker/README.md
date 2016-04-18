@@ -27,7 +27,6 @@ directory inside the main one and copy the jar file there.
 
 1. Create a directory where you will install the application. For example: `D:\CA\RC`.
 2. Copy the following directories from your build path to the destination directory:
-  * lib
   * config
 
 3. Edit the following files and substitute the example paths with the ones in your environment (e.g., Java path, 
